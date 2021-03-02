@@ -16,6 +16,8 @@
 	//Connect to the server
 	$result = socket_connect($sock, $server, $port) or die("Could not connect toserver\n");
 
+	print "Helllo, again I say hello, user!"
+
 	$message = "Hello from ". $host;
 	//Write to server socket
 	socket_write($sock, $message, strlen($message)) or die("Could not send data to server\n");
